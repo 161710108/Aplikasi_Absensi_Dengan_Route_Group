@@ -29,7 +29,7 @@ Route::get('user', function(){
 
 });
 
-Route::group(['prefix'=>'admin', 'middleware'=>'auth','role:Admin'],function(){
+Route::group(['prefix'=>'admin', 'middleware'=>'auth','role:Admin|member'],function(){
 Route::resource('siswa','SiswaController');
 Route::resource('kelas','KelasController');
 Route::resource('absensi','AbsensiController');

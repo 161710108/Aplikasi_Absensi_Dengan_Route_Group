@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Absensi extends Model
 {
 	protected $table = 'absensis';
-    protected $fillable = ['tgl_absen','kelas','id_siswa','id_keterangan'];
+    protected $fillable = ['tgl_absen','id_siswa','id_keterangan'];
     public $timestamps = true;
 
     public function Siswa(){

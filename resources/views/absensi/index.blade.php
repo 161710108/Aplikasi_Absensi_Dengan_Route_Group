@@ -28,7 +28,7 @@
 				  	  <tr>
 				    	<td>{{ $no++ }}</td>
 				    	<td>{{ $data->tgl_absen }}</td>
-				    	<td>{{ $data->Siswa->id_kelas }}</td>
+				    	<td>{{ $data->Siswa->Kelas->kelas }}</td>
 				    	<td>{{ $data->Siswa->nama }}</td>
 				    	<td>{{ $data->Keterangan->keterangan }}</td>
 						<td>

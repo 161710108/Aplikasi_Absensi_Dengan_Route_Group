@@ -54,6 +54,7 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
+            @include('layouts.flash')
             @yield('content')
         </div>
             <!-- END MAIN CONTENT-->

@@ -16,6 +16,7 @@
 			  		  <th>No</th>
 					  <th>Keterangan</th>
 					  <th>Siswa</th>
+					  <th>Kelas</th>
 					  <th colspan="3">Action</th>
 			  		</tr>
 				  	</thead>
@@ -26,7 +27,8 @@
 				  	  <tr>
 				    	<td>{{ $no++ }}</td>
 				    	<td>{{ $data->keterangan }}</td>
-				    	<td>@foreach($data->Absensi as $b)<li>{{ $b->id_siswa }}@endforeach</li></td>
+				    	<td>@foreach($data->Absensi as $b)<li>{{ $b->Siswa->nama }}@endforeach</li></td>
+				    	<td>@foreach($data->Absensi as $b)<li>{{ $b->Siswa->Kelas->kelas }}@endforeach</li></td>
 
 <td>
 	<a class="btn btn-warning" href="{{ route('keterangan.edit',$data->id) }}">Edit</a>
@@ -42,14 +44,14 @@
 		<button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')">Delete</button>
 	</form>
 </td>
-				      </tr>
-				      @endforeach	
-				  	</tbody>
-				  </table>
-				</div>
-			  </div>
-			</div>	
-		</div>
-	</div>
+ </tr>
+ @endforeach	
+</tbody>
+</table>
+</div>
+</div>
+</div>	
+</div>
+</div>
 </div>
 @endsection

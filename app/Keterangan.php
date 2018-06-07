@@ -12,6 +12,6 @@ class Keterangan extends Model
 
 
     public function Absensi(){
-        return $this->hasmany('App\Absensi','id_keterangan');
+        return $this->hasMany('App\Absensi','id_keterangan');
     }  
 }

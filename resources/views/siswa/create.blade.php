@@ -31,10 +31,10 @@
                         @endif
 			  		</div>
                  
-			  		<div class="radio {{$errors->has('jenis_kelamin') ? 'has->error' : ''}}">
-			  			<label class="control-lable">Jenis_kelamin</label>
-                   <input type="radio" name="jenis_kelamin" value="laki-laki">Laki-Laki
-                   <input type="radio" name="jenis_kelamin" value="perempuan">perempuan
+			  		<div class="form-group {{$errors->has('jenis_kelamin') ? 'has->error' : ''}}">
+			  		<label class="control-lable">Jenis_kelamin </label>
+                   <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki
+                   <input type="radio" name="jenis_kelamin" value="perempuan"> perempuan
                  @if ($errors->has('jenis_kelamin'))
 				<span class="help-block">
 					<strong>{{$errors->first('jenis_kelamin')}}</strong>

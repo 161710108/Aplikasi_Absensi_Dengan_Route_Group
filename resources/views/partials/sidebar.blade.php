@@ -12,8 +12,7 @@
                                 <i class="fas fa-tachometer-alt"></i>Home</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="{{ url('/home') }}"><font size="5" color="magenta" face="AR DECODE">Home
-                                    </font></a>
+                                      <a href="{{ url('/home') }}"><font size="6" color="magenta" face="AR DECODE">Home</font></a>
                                 </li>
                             </ul>
                         </li>

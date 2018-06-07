@@ -9,11 +9,7 @@ use Illuminate\Http\Request;
 use Session;
 class AbsensiController extends Controller
 {
-   public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
+  
     public function index()
     {
         $b = Absensi::with('Siswa','Keterangan')->get();
